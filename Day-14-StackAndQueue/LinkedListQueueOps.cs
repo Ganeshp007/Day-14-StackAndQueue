@@ -27,8 +27,20 @@ namespace Day_14_StackAndQueue
                 temp.next = node;
 
             }
-            Console.WriteLine("> {0} inserted into queue ", node.data);
+            Console.WriteLine("> {0} inserted into Queue...", node.data);
 
+        }
+
+
+        internal void DequeueAll()
+        {
+            while(head != null)
+            {
+                head = head.next;
+            }
+                
+            Console.WriteLine("\n> Dequeue Operaton Successfull...");
+           
         }
 
         internal void Display()
@@ -41,7 +53,7 @@ namespace Day_14_StackAndQueue
 
             }
 
-            Console.Write("\nQueue :- {");
+            Console.Write("\n>> Queue :- {");
             
             while (temp != null)
             {
