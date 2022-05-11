@@ -1,16 +1,11 @@
 ﻿// See https://aka.ms/new-console-template for more information
 
 using Day_14_StackAndQueue;
-Console.WriteLine("----- Stack Using LinkedList -----");
-LinkedListStackOps linkedListStackOps = new LinkedListStackOps();
-linkedListStackOps.Push(70);
-linkedListStackOps.Push(30);
-linkedListStackOps.Push(56);
-Console.WriteLine("\n>> Peek and Pop Task : \n");
-linkedListStackOps.Peek();
-linkedListStackOps.Pop();
-Console.WriteLine("\n>> Stack Before EmptyStack Task : \n");
-linkedListStackOps.Display();
-linkedListStackOps.IsEmpty();
-Console.WriteLine("\n>> Stack After EmptyStack Task : \n");
-linkedListStackOps.Display();
+
+Console.WriteLine("----- Queue Using LinkedList -----\n");
+
+LinkedListQueueOps linkedListQueue = new LinkedListQueueOps();
+linkedListQueue.Enqueue(56);
+linkedListQueue.Enqueue(30);
+linkedListQueue.Enqueue(70);
+linkedListQueue.Display();
